@@ -67,14 +67,14 @@ experiencia(anosEstudo);
 ```javascript
 var usuarios = [
 	{
-			nome: "João",
-			sexo: 'masculino',
-			habilidades: ["Javascript", "ReactJS"]
+		nome: "João",
+		sexo: 'masculino',
+		habilidades: ["Javascript", "ReactJS"]
 	},
 	{
-			nome: "Maria",
-			sexo: 'feminino',
-			habilidades: ["Flutter", "Assemby", "C#"]
+		nome: "Maria",
+		sexo: 'feminino',
+		habilidades: ["Flutter", "Assemby", "C#"]
 	}
 ];
 ```
