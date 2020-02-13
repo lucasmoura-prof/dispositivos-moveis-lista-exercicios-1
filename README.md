@@ -17,22 +17,22 @@ Lista 1 de exercícios da disciplina "Programação para Dispositivos Móveis".
 1- Crie uma função que dado o objeto no formato a seguir:
 ```javascript
 var address = {
-		rua: "Rua Vinte e Dois",
-		numero: 1239,
-		bairro: "Centro",
-		cidade: "Ituiutaba",
-		uf: "MG"
+	rua: "Rua Vinte e Dois",
+	numero: 1239,
+	bairro: "Centro",
+	cidade: "Ituiutaba",
+	uf: "MG"
 };
 ```
 
 Retorne o seguinte conteúdo:
-`A pessoa mora em Ituiutaba-MG, no bairro Centro, na rua "Rua Vinte e Dois" com, número 1239.`
+`A pessoa mora em Ituiutaba-MG, no bairro Centro, na rua "Rua Vinte e Dois", número 1239.`
 
 2- Crie uma função que dado um intervalo (entre x e y), exiba todos número pares:
 
 ```javascript
 function pares(x, y) {
-		// Implementação da função aqui
+	// Implementação da função aqui
 }
 
 pares(5, 540);
@@ -42,7 +42,7 @@ pares(5, 540);
 
 ```javascript
 function temHabilidade(skills) {
-		// Implementação
+	// Implementação
 }
 var skills = ["Javascript", "ReactJS", "React Native"];
 console.log(temHabilidade(skills)); // true ou false
@@ -53,7 +53,7 @@ Dica: para verificar se um vetor contém um valor, utilize o método indexOf.
 
 ```javascript
 function experiencia(anos) {
-		// Implementação
+	// Implementação
 }
 var anosEstudo = 7;
 experiencia(anosEstudo);
@@ -66,16 +66,16 @@ experiencia(anosEstudo);
 5- Dado o seguinte vetor de objetos:
 ```javascript
 var usuarios = [
-		{
-				nome: "João",
-				sexo: 'masculino',
-				habilidades: ["Javascript", "ReactJS"]
-		},
-		{
-				nome: "Maria",
-				sexo: 'feminino',
-				habilidades: ["Flutter", "Assemby", "C#"]
-		}
+	{
+			nome: "João",
+			sexo: 'masculino',
+			habilidades: ["Javascript", "ReactJS"]
+	},
+	{
+			nome: "Maria",
+			sexo: 'feminino',
+			habilidades: ["Flutter", "Assemby", "C#"]
+	}
 ];
 ```
 Escreva uma função que produza o seguinte resultado:
