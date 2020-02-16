@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- Exercícios disponíveis no arquivo dispositivos-moveis-lista-exercicios-1\README.md -->
+
+    <script> // Exercício 1 //
+        console.log("\n [Exercício 1]");
+
+        function mostrarEndereco(endereco) {
+            cidadeEstado = endereco["cidade"] + "-" + endereco["uf"];
+            bairro = endereco["bairro"];
+            ruaNumero = endereco["rua"] + '", número ' + endereco["numero"];
+            console.log('A pessoa mora em ' + cidadeEstado + ', no bairro ' + bairro + ', na rua "' + ruaNumero + '.');
+        }
+
+        var address = {
+            rua: "Rua Vinte e Dois",
+            numero: 1239,
+            bairro: "Centro",
+            cidade: "Ituiutaba",
+            uf: "MG"
+        };
+
+        mostrarEndereco(address); // (nomeDaPessoa, objeto)
+    </script>
+
+    <script> // Exercício 2 //
+        console.log("\n [Exercício 2]");
+
+        function pares(x, y) {
+            console.log("Números pares entre " + x + " e " + y + ":");
+            if (x > y) { // Força o resultado independentemente da ordem dada
+                var buff = x;
+                x = y;
+                y = buff;
+            }
+            for (x; x <= y; x++) {
+                if (x % 2 == 0) {
+                    console.log(x);
+                }
+            }
+        }
+
+        pares(3, 18); // Intervalo de números
+    </script>
+
+    <script> // Exercício 3 //
+        console.log("\n [Exercício 3]");
+
+        function temHabilidade(skills) {
+            for (var s of skills) {
+                if (s == "JavaScript") {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        var skills = ["JavaScript", "ReactJS", "React Native"];
+        console.log("Há habilidades em JavaScript?");
+        console.log(temHabilidade(skills)); // true ou false
+    </script>
+
+    <script> // Exercício 4 //
+        console.log("\n [Exercício 4]");
+
+        function experiencia(anos) {
+            var ranks = ["Youngling", "Padawan", "Jedi Knight", "Jedi Master"];
+            if (anos <= 0) {
+                console.log("Seu treinamento ainda não começou.");
+            } else if (anos > 0 && anos <= 1) {
+                console.log("Seu rank na Ordem é: " + ranks[0]);
+            } else if (anos > 1 && anos <= 3) {
+                console.log("Seu rank na Ordem é: " + ranks[1]);
+            } else if (anos > 3 && anos <= 6) {
+                console.log("Seu rank na Ordem é: " + ranks[2]);
+            } else if (anos >= 7) {
+                console.log("Seu rank na Ordem é: " + ranks[3]);
+            }
+        }
+
+        var anosEstudo = 7;
+        experiencia(anosEstudo);
+    </script>
+    <script> // Exercício 5 //
+        console.log("\n [Exercício 5]");
+
+        function habilidades(usuarios) {
+            for (var u of usuarios) {
+                var artigo = "";
+                if (u["sexo"] == "masculino") {
+                    artigo = "O ";
+                } else if (u["sexo"] == "feminino") {
+                    artigo = "A ";
+                }
+                var habilidades = u["habilidades"].join(", ")
+                console.log(artigo + u.nome + ' possui as habilidades: ' + habilidades + '.');
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: "João",
+                sexo: 'masculino',
+                habilidades: ["Javascript", "ReactJS"]
+            },
+            {
+                nome: "Maria",
+                sexo: 'feminino',
+                habilidades: ["Flutter", "Assemby", "C#"]
+            }
+        ];
+
+        habilidades(usuarios);
+    </script>
+
+</body>
+
+</html>
