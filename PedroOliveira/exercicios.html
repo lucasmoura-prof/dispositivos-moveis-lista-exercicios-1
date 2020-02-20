@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+		<h1> Lista de exercícios bacana sem formatação alguma, estou triste por tal ato de minha pessoa ;-; </h1>
+        <script>
+			<!-- Exercício 01 -->
+			console.log('Exercício 01');
+			var address = {
+                rua: "Rua Vinte e Dois",
+                numero: 1239,
+                bairro: "Centro",
+                cidade: "Ituiutaba",
+                uf: "MG"
+            };
+            
+            console.log('A pessoa mora em ' + address.cidade + '-' + address.uf + ', no bairro ' + address.bairro
++  ', na rua "'+ address.rua + '", número ' + address.numero+ '.' );
+        
+
+			<!-- Início do Exercício 02 -->
+            console.log('\n\nEXERCÍCIO 02');
+            function pares(x,y){
+			var conjuntoPares = '';
+                do{					<!-- Do while com o proposito de fazer um laço, utilizando o if para encontrar os pares, salvando em uma variável >
+					if(x%2 === 0){
+						conjuntoPares+= x + ' ';						
+					}
+					x++;
+                }while(x<=y);
+				console.log(conjuntoPares);
+            }
+            pares(5,40);
+        
+        
+			<!-- Início do Exercício 03 -->
+            console.log('\n\nEXERCÍCIO 03');
+            function temHabilidade(skills){		<!-- Função que verifica a existência da string Javascript, retornando falso caso não exista -->
+                if(skills.indexOf("Javascript") !== -1){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+            
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            console.log(temHabilidade(skills)); // True ou False
+        
+		
+			<!-- Início do Exercício 04 -->
+            console.log('\n\nEXERCÍCIO 04');
+            
+            function experiencia(anos){ <!-- Função p/ avaliar o número da qtd dos anos de estudo, comparado em ifs -->
+                if(anos >= 0 && anos <= 1 ){
+                    console.log('Iniciante');
+                }
+                else if(anos > 1 && anos <= 3 ){
+                    console.log('Intermediário');
+                }
+                else if(anos > 3 && anos <= 6 ){
+                    console.log('Avançado');
+                }
+                else if(anos > 6){
+                    console.log('Jedi Master');
+                }
+                else{
+                    console.log('Número inválido');
+                }
+            }
+            var anosEstudo = 7;
+            experiencia(anosEstudo);
+
+			
+			
+			
+			<!-- Início do exercício 05 -->
+            console.log('\n\nEXERCICIO 05');
+            var usuarios = [ <!-- Criação da estrutura -->
+                {
+                    nome: "João",
+                    sexo: "masculino",
+                    habilidades: ["JavaScript", "ReactJS"]
+                },
+                {
+                    nome: "Maria",
+                    sexo: 'feminino',
+                    habilidades: ["Flutter", "Assembly", "C#"]
+                }
+            ];
+
+            for(let item of usuarios){  <!-- Laço que utiliza de for..of para utilização da estrutura
+                var nString;
+                console.log();
+                if(item.sexo.localeCompare('masculino') === 0){
+                    nString = 'O ';
+                }
+                else{
+                    nString = 'A ';
+                }
+                
+                console.log(nString+  item.nome + ' possui as habilidades: ' + item.habilidades.join(', '));
+            }
+        </script>
+
+    </body>
+</html>
