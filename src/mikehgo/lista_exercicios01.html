@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <script>
+            /*1- Crie uma função que dado o objeto no formato a seguir:
+            Retorne o seguinte conteúdo: A pessoa mora em Ituiutaba-MG, no bairro Centro, na rua "Rua Vinte e Dois", número 1239. */
+            
+            var address = {
+                rua: "Rua Vinte e Dois",
+                numero: 1239,
+                bairro: "Centro",
+                cidade: "Ituiutaba",
+                uf: "MG"
+            };
+
+            function exercicio01(address) {
+                console.log("A pessoa mora em"+address.cidade+", no bairro "+address.bairro+"na "+address.rua+", número "+address.numero+".");
+            }
+            /* 2- Crie uma função que dado um intervalo (entre x e y), exiba todos número pares: */
+
+            function exercicio02(x, y) {
+                for (var i = x; i <= y; i++) {
+                    if(x % 2 == 0) console.log(x);
+                    x++;
+                }
+            }
+            /* 3- Escreva uma função que verifique se um vetor skills passado por parâmetro, se possui a habilidade "Javascript" e retorne um booleano true/false caso exista ou não.
+            Dica: para verificar se um vetor contém um valor, utilize o método indexOf. */
+            
+            var skills = ["Javascript", "ReactJS", "React Native"];
+
+            function exercicio03(skills) {
+                check = (skills.indexOf("Javascript", 0) === -1 ) ? false : true;
+                return check;
+            }
+            /* 4- Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é: */
+            function exercicio04 (anos) {
+                if (anos <= 1) return "Iniciante";
+                else if (anos > 1 && anos <= 3) return "Intermediário";
+                else if (anos > 3 && anos <= 6) return "Avançado";
+                else if (anos >= 7) return "Jedi Master";
+            }
+
+            /* 5- Dado o seguinte vetor de objetos:
+            Escreva uma função que produza o seguinte resultado: O João possui as habilidades: Javascript, ReactJS A Maria possui as habilidades: Flutter, Assemby, C#
+            Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array com um separador utilize a função join. */
+
+            var usuarios = [
+                {
+                    nome: "João",
+                    sexo: 'masculino',
+                    habilidades: ["Javascript", "ReactJS"]
+                },
+                {
+                    nome: "Maria",
+                    sexo: 'feminino',
+                    habilidades: ["Flutter", "Assemby", "C#"]
+                }
+            ];
+
+            function exercicio05 (usuarios) {
+                var msg = new Array(usuarios.length).fill("");
+                var x = 0
+                for (i of usuarios) {
+                    msg[x] += (i.sexo === "masculino") ? "O " : "A ";
+                    msg[x] += (i.nome+" possui as habilidades: "+i.habilidades);
+                    msg[x] = msg[x].replace(/,/g,", ");
+                    x++;
+                }
+                return msg;
+            }
+
+
+        </script>
+    </body>    
+</html>
