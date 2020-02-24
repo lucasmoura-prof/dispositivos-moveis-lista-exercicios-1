@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var usuarios = [
+                {
+                    nome: "João",
+                    sexo: 'masculino',
+                    habilidades: ["Javascript", "ReactJS"]
+                },
+                
+                {
+                    nome: "Maria",
+                    sexo: 'feminino',
+                    habilidades: ["Flutter", "Assemby", "C#"]
+                }
+            ];
+
+            function Habi (usuarios){
+                for(let abc of usuarios){
+                    console.log("O "+ abc.nome+" possui as habilidades: "+ abc.habilidades.join(", "));
+                }
+            
+            };
+
+            Habi(usuarios);
+            /*O João possui as habilidades: Javascript, ReactJS A Maria possui as habilidades: Flutter, Assemby, C#*/
+        </script>        
+    </body>
+</html>
