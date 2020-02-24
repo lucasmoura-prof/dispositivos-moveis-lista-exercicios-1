@@ -1,0 +1,74 @@
+/* 
+    Pallete: https://colorhunt.co/palette/171981
+
+    White: #FFFDF9
+    Light Blue: #BEEBE9
+    Dark Blue: #8AC6D1
+    Pink: #FFE3ED
+
+    Font: #30475E
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    background-color: #BEEBE9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #30475E;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 45px;
+    border-bottom: 1px solid #8AC6D1;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #FFFDF9;
+    margin-bottom: 20px;
+}
+
+.title {
+    margin-left: 5px;
+    font-size: large;
+}
+
+.answer {
+    align-self: center;
+    width: 80%;
+    background-color: #FFFDF9;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #8AC6D1;
+}
+
+.fill {
+    flex: 1 0 auto;
+}
+
+.footer {
+    height: 35px;
+    border-top: 1px solid #8AC6D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: #FFFDF9;
+}
