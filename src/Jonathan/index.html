@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+
+    </head>
+    <body>
+<script>
+    //exercicio 1
+    var address = {
+	rua: "Rua Vinte e Dois",
+	numero: 1239,
+	bairro: "Centro",
+	cidade: "Ituiutaba",
+	uf: "MG"
+};
+
+console.log("A pessoa mora em",address.cidade,address.uf,"no bairro",address.bairro ,"na rua",address.rua, "numero",address.numero);
+
+
+
+//exercicio 2
+function pares(x, y) {
+    for (i = 5; i <=540/2;i++){
+        console ("Pares : \n", i*2);
+    }
+}
+
+
+
+//exercicio 3
+function temHabilidade(skills,find) {
+	return (skill.indexOf(find) >= 0);
+}
+var skills = ["Javascript", "ReactJS", "React Native"];
+console.log(temHabilidade(skills)); // true ou false
+
+function experiencia(anos) {
+	
+// exercicio 4	
+}
+var anosEstudo = 7;
+experiencia(anosEstudo);
+
+if(ano <=1){
+	console.log("Iniciante :");
+}else if(anosEstudo>=1 && anosEstudo >=3){
+	console.log("Intermediário :");
+}else if(anosEstudo <=6){
+	console.log("Avaçado :");
+}else{
+	console.log("Mestre Jedi :");
+}
+
+// exercicio 5
+var usuarios = [
+	{
+		nome: "João",
+		sexo: 'masculino',
+		habilidades: ["Javascript", "ReactJS"]
+	},
+	{
+		nome: "Maria",
+		sexo: 'feminino',
+		habilidades: ["Flutter", "Assemby", "C#"]
+	}
+];
+
+	console.log("O",usuarios[0].nome,"possui as habilidades",usuarios[1].habilidades[0],usuarios[1].habilidades[1],usuarios[1].habilidades[2]);
+
+
+        </script>    
+    </body>
+</html>
+
